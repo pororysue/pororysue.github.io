@@ -2,21 +2,58 @@
 layout: default
 ---
 <div class="home">
-
-    <h1 class="page-heading">Posts</h1>
-
-    <ul class="post-list">
-        {% for post in site.posts %}
+    <ul class="gNow">
         <li>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <div class="card">
+                <p class="card-title">Google Now Card</p>
 
-            <h2>
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
+                <p>Font is Open Sans. Title is 28px, whereas the body is 14px.</p>
+
+                <p>Font color is #444, on a #fff card. The page color is #e1e1e1. I got these from samples I took from
+                    Google's "Now" page.</p>
+
+                <p class="url"><a href="http://www.google.com/landing/now/">See the page</a></p>
+            </div>
         </li>
-        {% endfor %}
+        <li>
+            <div class="card">
+                <p class="card-title">The Card is Repeatable</p>
+
+                <p>We can have as many of these on a page as we like.</p>
+            </div>
+        </li>
     </ul>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
+    <ul class="gNow"
+    ">
+    <li>
+        <div class="card">
+            <p class="card-title">Picture</p>
+            <img src="http://www.eriklindemann.com/eMetro/images/full/helpless.jpg" class="full"/>
+
+            <p>When a card has a picture, it should almost always be full bleed width-wise.</p>
+
+            <p>There are a few exceptions to this which will be covered.</p>
+        </div>
+    </li>
+    </ul>
+    <!--
+        <h1 class="page-heading">Posts</h1>
+
+        <ul class="post-list">
+            {% for post in site.posts %}
+            <li>
+                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+                <h2>
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+            </li>
+            {% endfor %}
+        </ul>
+
+
+        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    !-->
 </div>
