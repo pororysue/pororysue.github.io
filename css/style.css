@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/* Desktop */
+html, body {
+    height: 100%;
+    font-family: 'Apple SD Gothic Neo Medium', 'Malgun Gothic', 'NanumGothic', Arial, verdana;
+    margin: 0;
+}
+
+a:link, a:visited, a:active {
+    color: #666;
+    text-decoration: none;
+}
+
+dl, ul, ol, li, p {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+label {
+    display: inline-block;
+    width: 5em;
+}
+
+h1 {
+    margin: 0;
+}
+
+.home {
+    margin: 0;
+    padding: 0;
+}
+
+#profile {
+    height: auto;
+    padding: 30px;
+    background-color: #FAFAFA;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+    position: relative;
+    display: block;
+}
+
+#profile .image {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid;
+    border-color: #03A9F4;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background-image: url('https://graph.facebook.com/suemiere.b/picture?type=large');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#profile .description {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #212121;
+    font-size: 10pt;
+}
+
+#profile .description h1 {
+    margin: 15px;
+    font-weight: 800;
+    color: #03A9F4;
+    font-size: 24pt;
+}
+
+#main {
+    width: auto;
+    height: 100%;
+    background-color: rgba(158, 158, 158, 0.1);
+}
